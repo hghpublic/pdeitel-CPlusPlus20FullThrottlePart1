@@ -1,0 +1,43 @@
+= C++20 Full Throttle (part 1)
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+[IMPORTANT]
+====
+The commit history of this branch is volatile. +
+Rebasing and force pushing happens at will. +
+The commits in this branch mostly collect changes with a narrow scope. +
+They rarely document code evolution. +
+The history may be rewritten without notice.
+====
+
+== C++20 Full Throttle with Paul Deitel
+
+O'Reilly::
+https://learning.oreilly.com/live-events/c20-full-throttle-with-paul-deitel/0636920092682/
+
+GitHub::
+https://github.com/hghpublic/pdeitel-CPlusPlus20FullThrottlePart1
+
+== Modern C++ Full Throttle with Paul Deitel: Intro to C++20 & the Standard Library
+
+O'Reilly::
+https://learning.oreilly.com/live-events/modern-c-full-throttle-with-paul-deitel-intro-to-c20-the-standard-library/0790145076976/
+
+== C++20 for Programmers: An Objects-Natural Approach, 3rd Edition
+
+O'Reilly::
+https://learning.oreilly.com/library/view/c-20-for-programmers/9780136905776/
+
+== C++20 Fundamentals with Paul Deitel
+
+O'Reilly::
+https://learning.oreilly.com/course/c20-fundamentals-with/9780136875185/
+
+GitHub::
+https://github.com/pdeitel/CPlusPlus20FundamentalsLiveLessons
+
