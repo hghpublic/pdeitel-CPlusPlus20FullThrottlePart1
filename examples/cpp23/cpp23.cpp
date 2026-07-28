@@ -1,4 +1,9 @@
-import std;
+// import std;
+#include <iostream>
+#include <format>
+#include <print>
+#include <vector>
+#include <ranges>
 
 int main() {
    std::println("Demonstrating print and println");

@@ -1,6 +1,7 @@
 // fig16_01.cpp
 // Importing a standard library header as a header unit.
-import <iostream>; // instead of #include <iostream>
+// import <iostream>; // instead of #include <iostream>
+#include <iostream>
 
 int main() {
    std::cout << "Welcome to C++20 Modules!\n"; 
