@@ -1,0 +1,43 @@
+= examples-libraries
+:toc:
+:sectnums:
+
+== deitel-openai-cpp
+
+https://deitel.com/category/ai/openai/
+
+https://github.com/olrea/openai-cpp
+
+https://openai.com/api/
+
+== fmt
+
+https://github.com/fmtlib/fmt
+
+== generator
+
+https://tl.tartanllama.xyz/
+
+https://github.com/TartanLlama
+
+https://github.com/TartanLlama/generator
+
+== GSL
+
+https://github.com/microsoft/GSL
+
+== math-boost-1.81.0
+
+https://www.boost.org/libs/math/
+
+https://github.com/boostorg/math
+
+== multiprecision-Boost_1_89_0
+
+https://www.boost.org/libs/multiprecision
+
+https://github.com/boostorg/multiprecision
+
+== rapidcsv
+
+https://github.com/d99kris/rapidcsv

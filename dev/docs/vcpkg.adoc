@@ -1,0 +1,69 @@
+= vcpkg
+
+The package `boost-math` is compatible with built-in CMake targets of `FindBoost.cmake`::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS math)
+target_link_libraries(main PRIVATE Boost::math)
+----
+or the generated cmake configs via:
++
+[source, cmake]
+----
+find_package( REQUIRED CONFIG)
+target_link_libraries(main PRIVATE Boost::math)
+----
+
+The package `boost-multiprecision` is compatible with built-in CMake targets of `FindBoost.cmake`::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS multiprecision)
+target_link_libraries(main PRIVATE Boost::multiprecision)
+----
+or the generated cmake configs via:
++
+[source, cmake]
+----
+find_package( REQUIRED CONFIG)
+target_link_libraries(main PRIVATE Boost::multiprecision)
+----
+
+The package `fmt` provides CMake targets::
++
+[source, cmake]
+----
+find_package(fmt CONFIG REQUIRED)
+target_link_libraries(main PRIVATE fmt::fmt)
+
+# Or use the header-only version
+find_package(fmt CONFIG REQUIRED)
+target_link_libraries(main PRIVATE fmt::fmt-header-only)
+----
+
+The package `gsl` is compatible with built-in CMake targets::
++
+[source, cmake]
+----
+find_package(GSL REQUIRED)
+target_link_libraries(main PRIVATE GSL::gsl GSL::gslcblas)
+----
+
+`rapidcsv` provides CMake targets::
++
+[source, cmake]
+----
+# this is heuristically generated, and may not be correct
+find_package(rapidcsv CONFIG REQUIRED)
+target_link_libraries(main PRIVATE rapidcsv::rapidcsv)
+----
+
+`tl-generator` is header-only and can be used from CMake via::
++
+[source, cmake]
+----
+find_path(TL_GENERATOR_INCLUDE_DIRS "tl/generator.hpp")
+target_include_directories(main PRIVATE ${TL_GENERATOR_INCLUDE_DIRS})
+----
+

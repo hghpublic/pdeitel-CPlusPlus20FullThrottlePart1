@@ -1,0 +1,53 @@
+= cmake
+:toc:
+:sectnums:
+
+== modules
+
+=== C++ import std support
+
+https://github.com/Kitware/CMake/blob/master/Help/dev/experimental.rst
+"f35a9ac6-8463-4d38-8eec-5d6008153e7d" for CMake 4.4+, 
+"0e5b6991-d74f-4b3d-a41c-cf096e0b2508" for select 3.30+
+
+
+https://libcxx.llvm.org/Modules.html
+https://discourse.cmake.org/t/cmake-experimental-cxx-import-std-value-history-and-state/15712/3
+https://discourse.cmake.org/t/import-std-appears-to-be-broken-in-release-4-0-2/14062/4
+https://gist.github.com/YanzhaoW/ee89c5a61f8dc7d0c7deebcf47e2f589
+https://discourse.cmake.org/t/linker-error-with-import-std-example/14224
+https://gitlab.kitware.com/cmake/cmake/-/work_items/27626
+
+
+----
+
+[cmake] CMake Error in examples/cpp23/CMakeLists.txt:
+[cmake]   The "CXX_MODULE_STD" property on the target "cpp23" requires that the
+[cmake]   "__CMAKE::CXX26" target exist, but it was not provided by the toolchain.
+[cmake]   Reason:
+[cmake] 
+[cmake]     Experimental `import std` support not enabled when detecting toolchain; it must be set before `CXX` is enabled (usually a `project()` call)
+
+set(CMAKE_EXPERIMENTAL_CXX_IMPORT_STD "0e5b6991-d74f-4b3d-a41c-cf096e0b2508")
+set(CMAKE_CXX_MODULE_STD 1)
+----
+
+== import std in CMake 3.30
+
+https://www.kitware.com/import-std-in-cmake-3-30/
+
+== CXX_MODULE with import std may fail with GCC-16 on Ubuntu 24.04.4 LTS
+
+https://gitlab.kitware.com/cmake/cmake/-/work_items/27962
+
+== C++ Modules and CMake
+
+https://cryos.net/2024/01/c-modules-and-cmake/
+
+== import CMake; C++20 Modules
+
+https://www.kitware.com/import-cmake-c20-modules/
+
+== A short tour of C++ modules
+
+https://www.kgmw.ch/posts/cpp-modules-intro/
